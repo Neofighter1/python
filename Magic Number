@@ -1,0 +1,27 @@
+'''n=input()
+a=len(n)
+sum=0
+for i in range(a):
+    sum=int(n[i])+sum
+b=len(str(sum))
+if sum==1:
+    print("magic")
+elif b==2:
+ c=str(sum)
+ d=int(c[0])+int(c[1])
+ if d==1:
+     print("magic")
+else:
+    print("not")'''
+n=input()
+j=0
+for i in n:
+   j=j+int(i)
+if j==1:print("Magic No.")
+elif j<=9:print("not")
+else:
+    f=0
+    for i in str(j):
+       f=f+int(i)
+    if f==1:print("Magic No.")
+    elif f<=9:print("not")
